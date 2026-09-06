@@ -10,7 +10,7 @@ cask "emux" do
   desc "Multiplexing for coding agents"
   homepage "https://github.com/easymux/homebrew-tap"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "emux.app"
 
