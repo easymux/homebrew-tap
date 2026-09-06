@@ -1,11 +1,13 @@
 # homebrew-tap
 
-Homebrew tap for [emux](https://github.com/easymux/homebrew-tap), multiplexing for coding agents.
+Homebrew tap for emux, multiplexing for coding agents.
 
 ```sh
 brew tap easymux/tap
+brew trust easymux/tap
 brew install --cask --no-quarantine emux
 ```
 
-emux is not notarized by Apple, so `--no-quarantine` is required. Without it
-macOS blocks the app at launch.
+`brew trust` is required for any third-party tap. `--no-quarantine` is required
+because emux is not notarized by Apple: without it macOS blocks the app at
+launch.
