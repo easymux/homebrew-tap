@@ -15,9 +15,12 @@ cask "emux" do
   app "emux.app"
 
   caveats <<~EOS
-    emux is not notarized. If it refuses to open, reinstall with:
+    emux is not notarized by Apple, so macOS blocks it on first launch.
+    Lift the quarantine once:
 
-      brew install --cask --no-quarantine emux
+      xattr -dr com.apple.quarantine /Applications/emux.app
+
+    Or open System Settings > Privacy & Security and click "Open Anyway".
   EOS
 
   zap trash: [
