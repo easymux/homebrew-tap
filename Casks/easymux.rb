@@ -1,9 +1,9 @@
 cask "easymux" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.20"
-  sha256 arm:   "11e9537b29cac6aab703b602972a1250dc9ecc187c010558e443f73570754eb0",
-         intel: "008b8ef575b068c795bef976eb5bb81996c2ffb68ef8b780218ff0fd92ea044b"
+  version "0.1.21"
+  sha256 arm:   "931259a9f1e4b58aaeae25f9183c4ea5029b65d71c2880acda5c43107c98bae6",
+         intel: "adcd5b769264efb53c24a2e2ee84f2c3680ab9ca678082d1627a016237c1a1a9"
 
   url "https://github.com/easymux/homebrew-tap/releases/download/v#{version}/emux-#{version}-#{arch}.zip"
   name "emux"
@@ -13,6 +13,7 @@ cask "easymux" do
   depends_on macos: :big_sur
 
   app "emux.app"
+  binary "#{appdir}/emux.app/Contents/Resources/bin/emux-darwin-#{arch}", target: "emux"
 
   caveats <<~EOS
     emux is not notarized by Apple, so macOS blocks it on first launch.
