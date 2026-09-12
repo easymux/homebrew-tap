@@ -8,7 +8,7 @@ The app, macOS:
 brew tap easymux/tap && brew trust easymux/tap && brew install --cask easymux && xattr -dr com.apple.quarantine /Applications/emux.app
 ```
 
-The `emux` command line, macOS and Linux:
+The cask also links the `emux` command line. On Linux, the command line alone:
 
 ```sh
 brew install easymux/tap/emux
