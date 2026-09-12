@@ -1,4 +1,4 @@
-cask "emux" do
+cask "easymux" do
   arch arm: "arm64", intel: "x64"
 
   version "0.1.20"
