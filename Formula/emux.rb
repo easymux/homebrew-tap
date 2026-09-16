@@ -1,18 +1,18 @@
 class Emux < Formula
   desc "Command line for emux: open a repo in the app"
   homepage "https://github.com/easymux/homebrew-tap"
-  version "0.1.22"
+  version "0.1.23"
   license :cannot_represent
 
   depends_on :linux
 
   on_arm do
-    url "https://github.com/easymux/homebrew-tap/releases/download/v0.1.22/emux-linux-arm64"
-    sha256 "21147d600f2234db7deadfd32cafa5406454ed7c808468ce750a085dc0b784fd"
+    url "https://github.com/easymux/homebrew-tap/releases/download/v0.1.23/emux-linux-arm64"
+    sha256 "50f5d17108b49ed22ec96b21febaeb101086cb36cf525262d8261e82f029ca0f"
   end
   on_intel do
-    url "https://github.com/easymux/homebrew-tap/releases/download/v0.1.22/emux-linux-x86_64"
-    sha256 "444368bd1be95989c3c3d8d849a1766cd8195304fea5202732928d39d0881c4d"
+    url "https://github.com/easymux/homebrew-tap/releases/download/v0.1.23/emux-linux-x86_64"
+    sha256 "2ab583d3b4042120221080c3e6170aae0aa1a129d173e8fa1e61f5b84dbc7626"
   end
 
   def install
