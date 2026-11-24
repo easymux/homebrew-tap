@@ -1,9 +1,9 @@
 cask "easymux" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.36"
-  sha256 arm:   "0ea4dedbb1a4bbd041042e5f414169572de8e4a3888dcdd87d13dc7ea2cdf7ca",
-         intel: "9c567f066e0102a01ab3bbd2d2631029db8e907c837e43a057b89eda845ae53d"
+  version "0.1.37"
+  sha256 arm:   "dbc6776740e00a9c655f3e021500a204c0d6a68f657f9bf329d62f4ce57e01bc",
+         intel: "76673dde2e3e86f7a1ec6b8a9cfc1b260e18c65682d464ec34b462231d01648a"
 
   url "https://github.com/easymux/homebrew-tap/releases/download/v#{version}/emux-#{version}-#{arch}.zip"
   name "emux"
